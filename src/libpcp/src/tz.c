@@ -125,7 +125,7 @@ __pmSquashTZ(char *tzbuffer)
 
     if (offset != 0) {
 	int hours = offset / 3600;
-	int mins = abs ((offset % 3600) / 60);
+	int mins = labs ((offset % 3600) / 60);
 	int len = (int) strlen(tzn);
 
 	if (mins == 0) {
