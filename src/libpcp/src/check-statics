@@ -475,6 +475,7 @@ do
 		    -e '/ r __PRETTY_FUNCTION__.[0-9][0-9]*$/d' \
 		    -e '/ r __func__.[0-9][0-9]*$/d' \
 		    -e '/ r \.L__func__.*$/d' \
+		    -e '/ r \.L__PRETTY_FUNCTION__.*$/d' \
 		    -e '/ r CSWTCH.[0-9][0-9]*$/d' \
 		    -e '/ r \.LC[0-9][0-9]*$/d' \
 		    -e '/ C ___pmLogReads/d' \
